@@ -1,16 +1,84 @@
-# React + Vite
+# 🚀 SaaS Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive SaaS landing page built with **React** and **Vite**, styled using **Tailwind CSS**, and enhanced with **lucide-react** icons.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Overview
 
-## React Compiler
+This project is a clean and performant landing page designed for SaaS products. It focuses on speed, scalability, and a smooth user experience across all devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React** – UI development
+* **Vite** – Fast build tool and dev server
+* **Tailwind CSS** – Utility-first styling
+* **lucide-react (^1.7.0)** – Icon library
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── components/      # UI components (Navbar, Hero, Features, etc.)
+├── assets/          # Images and static files
+├── pages/           # Page-level components
+├── App.jsx          # Root component
+└── main.jsx         # Entry point
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run development server
+
+```bash
+npm run dev
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 🎨 Features
+
+* Fully **responsive design**
+* Modern and clean UI
+* Built with **Tailwind CSS** for rapid styling
+* Scalable and maintainable structure
+* Integrated **lucide-react** icons
+
+---
+
+## 📦 Dependencies
+
+```json
+"lucide-react": "^1.7.0"
+```
+
+---
+
+## 📄 License
+
+This project is open-source and available for use and modification.
+
+---
+
+## ✨ Notes
+
+You can easily customize colors, typography, and layout via Tailwind configuration. The structure allows adding new sections or pages with minimal effort.
