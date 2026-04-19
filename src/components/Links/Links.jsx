@@ -17,7 +17,7 @@ hover:after:scale-x-100`;
         </li>
         <li>
           <a href="#solutions" className={`${classUnderline}`}>
-            solutions
+            Solutions
           </a>
         </li>
         <li>

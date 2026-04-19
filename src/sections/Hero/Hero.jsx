@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section className={`${classContainer}`}>
       {/* Hero Content */}
-      <div className="flex flex-col justify-center items-center gap-10 lg:items-start lg:gap-14">
+      <div className="flex flex-col justify-center items-center gap-10 lg:items-start ">
         <div className="flex flex-col justify-center items-center gap-6 lg:items-start">
           <h2 className="capitalize font-primary text-4xl font-bold text-white tracking-tight lg:text-6xl lg:leading-16">
             Get More Done With Whitepace
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <CallToAction
           title="Try Taskey Free"
-          pv="py-5"
+          pv="py-3 lg:py-4"
           ph="px-10"
           text="text-lg"
         />
