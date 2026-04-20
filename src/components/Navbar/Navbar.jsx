@@ -64,7 +64,7 @@ const Navbar = () => {
       )}
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-primary shadow-lg p-6 flex flex-col gap-6 transition-all duration-300 
+        className={`fixed top-0 right-0 h-full w-10/12 bg-primary shadow-lg p-6 flex flex-col gap-6 transition-all duration-300 
           ${toggleButton ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
         `}
       >
@@ -74,7 +74,7 @@ const Navbar = () => {
           state="xm:hidden"
           title="Try Whitepace free"
           pv="py-4"
-          text="text-xl"
+          text="text-lg"
         />
       </div>
     </nav>

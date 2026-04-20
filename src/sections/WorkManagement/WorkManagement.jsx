@@ -5,7 +5,7 @@ import Img1 from "../../assets/Images/WorkManagement/Image (2).png";
 import WorkTogetherImage from "../../assets/Images/WorkManagement/Work Together Image.png";
 const WorkManagement = () => {
   return (
-    <div className=" relative flex flex-col justify-center items-center gap-24 px-4 py-20 md:px-5 md:py-24 lg:px-8 lg:py-36 ">
+    <div className="relative flex flex-col justify-center items-center gap-24 px-4 py-20 md:px-5 md:py-24 lg:px-8 lg:py-36 ">
       <div className="absolute left-0 top-8 z-0 pointer-events-none">
         <img
           src={background}
