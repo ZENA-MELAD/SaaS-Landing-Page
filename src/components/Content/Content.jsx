@@ -1,9 +1,13 @@
 import React from "react";
 import Img from "../../assets/Images/WorkManagement/Image.png";
 import CallToAction from "../CallToAction/CallToAction";
+import {motion } from "framer-motion"
 const Content = (props) => {
   return (
-    <section className="w-full z-10 relative flex flex-col justify-center items-center text-center gap-14 overflow-hidden lg:flex-row lg:text-left">
+    <section
+      className={`z-10  relative flex flex-col justify-center items-center text-center  gap-14 lg:${props.direction} lg:text-left`}
+  
+    >
       {/* Content */}
       <div className="flex flex-col justify-center items-center gap-10 lg:items-start">
         {/* Title and Description */}
@@ -19,21 +23,24 @@ const Content = (props) => {
               />
             </span>
           </h4>
-          <p className="font-primary text-lg leading-8 tracking-tight font-light  text-third max-w-2xl ">
-         {props.paragraph}
+          <p className="font-primary text-lg leading-8 tracking-tight font-light  text-third max-w-2xl lg:max-w-lg">
+            {props.paragraph}
           </p>
         </div>
         {/* Call To Action */}
         <CallToAction
           title={props.titleButton}
           ph="px-8"
-          pv="py-3 lg:py-4"
+          pv="py-3"
           text="text-lg"
         />
       </div>
-      <div className="w-10/12 xm:max-w-lg mx-auto">
-        <img src={props.image} alt="work together"  className="w-full"/>
-      </div>
+      <motion.div
+        className="mt-6 w-10/12 xm:max-w-lg mx-auto lg:max-w-lg "
+       {...props.animationProps}
+      >
+        <img src={props.image} alt="work together" className="w-full" />
+      </motion.div>
     </section>
   );
 };

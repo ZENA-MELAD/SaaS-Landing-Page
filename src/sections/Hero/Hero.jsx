@@ -10,7 +10,7 @@ const Hero = () => {
         xm:bg-[url('/src/assets/Images/HeroImages/bg-tablet.png')]
         lg:bg-[url('/src/assets/Images/HeroImages/bg-desktop.png')]
         lg:flex-row
-        lg:justify-between
+        lg:justify-center
         lg:gap-0
         lg:text-left
         lg:px-8
@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-center gap-6 lg:items-start">
           {/* ✅ fadeInDown على العنوان */}
           <motion.h2
-            className="capitalize font-primary text-4xl font-bold text-white tracking-tight lg:text-6xl lg:leading-16"
+            className="capitalize font-primary text-4xl font-bold text-white tracking-tight lg:text-5xl lg:max-w-lg lg:leading-16"
             initial={{ opacity: 0, y: -60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -32,7 +32,7 @@ const Hero = () => {
           </motion.h2>
 
           <motion.p
-            className="font-primary text-lg text-white font-light tracking-tight leading-7 max-w-lg"
+            className="font-primary text-lg text-white font-light tracking-tight leading-7 max-w-lg "
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -52,7 +52,7 @@ const Hero = () => {
 
       {/* Hero Image */}
       <motion.div
-        className="xm:max-w-xl md:max-w-2xl lg:max-w-xl lg:mt-12 xl:max-w-2xl xl:mt-28"
+        className="xm:max-w-xl md:max-w-2xl lg:max-w-xl lg:mt-12"
         initial={{
           opacity: 0,
           x: window.innerWidth >= 1024 ? 60 : 0,
