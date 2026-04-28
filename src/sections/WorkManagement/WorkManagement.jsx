@@ -56,8 +56,8 @@ const WorkManagement = () => {
       >
         <Content
           lgDirection="lg:flex-row"
-          firstWord="project"
-          secondWord="management"
+          firstWord="Project"
+          secondWord="Management"
           paragraph="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
           titleButton="Get Started"
           image={Img1}

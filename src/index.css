@@ -1,21 +1,21 @@
 @import "tailwindcss";
 @theme {
   --color-primary: #043873;
-  --color-secondary:#4F9CF9;
-  --color-third:#212529;
+  --color-secondary: #4f9cf9;
+  --color-third: #212529;
   --font-primary: "Inter", sans-serif;
   --font-secondary: "DM Sans", sans-serif;
-  --breakpoint-xm:600px;
+  --breakpoint-xm: 600px;
+}
+@layer components {
+  .content-section {
+    @apply px-4 py-20 flex flex-col justify-center items-center text-center lg:text-left;
   }
-  @layer components{
-    .content-section{
-      @apply px-4 py-20 flex flex-col justify-center items-center text-center lg:text-left; 
-    }
-    .class-title{
-      @apply text-4xl font-bold font-primary tracking-tight md:text-5xl
-    }
-    .class-description{
-      @apply font-light leading-8 tracking-tight font-primary max-w-2xl text-lg;
-    }
+  .class-title {
+    @apply text-4xl font-bold font-primary tracking-tight md:text-5xl;
   }
-
+  .class-description {
+    @apply font-light leading-6 tracking-tight font-primary max-w-2xl text-lg sm:max-w-md;
+  }
+ 
+}

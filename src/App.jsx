@@ -1,3 +1,4 @@
+import CustomizeApp from "./sections/CustomizeApp/CustomizeApp"
 import Header from "./sections/Header/Header"
 import Hero from "./sections/Hero/Hero"
 import Uses from "./sections/Uses/Uses"
@@ -14,6 +15,7 @@ function App() {
     <Hero/>
     <WorkManagement/>
     <Uses/>
+    <CustomizeApp/>
     </div>
   )
 }

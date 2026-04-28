@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import CallToAction from "../../components/CallToAction/CallToAction";
 import Img from "../../assets/Images/HeroImages/undraw_data_25jw.svg";
+import Paragraph from "../../components/Paragraph/Paragraph";
 
 const Hero = () => {
   const [isDesktop, setIsDesktop] = useState(
@@ -34,21 +35,18 @@ const Hero = () => {
           <motion.h2
             className="capitalize font-primary text-4xl font-bold text-white tracking-tight lg:text-5xl lg:max-w-lg lg:leading-16"
             initial={{ opacity: 0, y: -60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             Get More Done With Whitepace
           </motion.h2>
-
-          <motion.p
-            className=" text-white class-description  lg:max-w-lg"
-            initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-          >
-            Project management software that enables your teams to collaborate,
-            plan, analyze and manage everyday tasks.
-          </motion.p>
+          <Paragraph
+            content=" Project management software that enables your teams to collaborate,
+            plan, analyze and manage everyday tasks."
+            colorText="text-white"
+            delay={0.2}
+          />
         </div>
         <CallToAction
           title="Try Taskey Free"
@@ -67,13 +65,13 @@ const Hero = () => {
           x: isDesktop ? 60 : 0,
           y: isDesktop ? 0 : 40,
         }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.9 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        viewport={{ once: true, amount: 0 }}
+        transition={{ duration: 0.6, ease:"easeOut" , delay:0.2 }}
       >
         <img src={Img} alt="Hero Image" className="object-contain" />
       </motion.div>
     </section>
   );
 };
-
 export default Hero;

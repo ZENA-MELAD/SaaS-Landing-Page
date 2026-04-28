@@ -3,6 +3,7 @@ import Img1 from "../../assets/Images/Uses/Image.png";
 import Img2 from "../../assets/Images/Uses/Image (3).png";
 import CallToAction from "../../components/CallToAction/CallToAction";
 import { motion } from "motion/react";
+import TitleParagraph from "../../components/TitleParagraph/TitleParagraph";
 const Uses = () => {
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -18,38 +19,25 @@ const Uses = () => {
     return () => window.removeEventListener("resize", check);
   }, []);
   return (
-    <section className="content-section  gap-14  bg-primary md:px-8 md:py-24 lg:flex-row    lg:px-8 lg:py-36">
-      <div className="flex flex-col justify-center items-center gap-14 lg:items-start">
+    <section className="content-section  gap-16  bg-primary md:px-8 md:py-24 lg:flex-row    lg:px-8 lg:py-36">
+      <div className="flex flex-col justify-center items-center gap-10 lg:items-start">
         <div className="flex flex-col justify-center items-center gap-6 lg:items-start">
-          <motion.h4
-            className="class-title text-white"
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            Use as {""}
-            <span className="inline-block relative">
-              <span className="relative z-10">Extension</span>
-              <img
-                src={Img1}
-                alt="Extension Image"
-                className="absolute z-0 left-3 top-3/4 w-full object-contain pointer-events-none"
-              />
-            </span>
-          </motion.h4>
+          <TitleParagraph
+            color="text-white"
+            partOne="Use as"
+            partTwo="Extension"
+            delay={0}
+          />
           <motion.p
-            className="class-description text-white lg:max-w-md"
+            className="class-description text-white sm:max-w-md"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
           >
-            Customise the app with plugins, custom themes and multiple text
-            editors (Rich Text or Markdown). Or create your own scripts and
-            plugins using the Extension API.
+            Use the web clipper extension, available on Chrome and Firefox, to
+            save web pages or take screenshots as notes.
           </motion.p>
         </div>
         <motion.div
